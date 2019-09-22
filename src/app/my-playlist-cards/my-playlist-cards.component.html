@@ -1,0 +1,23 @@
+
+<div class="flexcontainer">
+    <mat-card class = "tp-card" *ngFor="let track of tracks" >
+        <mat-card-header>
+           <div mat-card-avatar class = "tp-header-image"></div>
+           
+           <mat-card-title>{{track.name}}</mat-card-title>
+           <mat-card-subtitle>{{track.id}}</mat-card-subtitle>
+         
+        </mat-card-header>
+        <img mat-card-image src = "../../assets/track.jpg" alt = "Track">
+        <mat-card-content>
+           <p>
+             {{track.comment}}
+           </p>
+       
+        </mat-card-content>
+        <mat-card-actions>
+         <button mat-raised-button (click)="openDialog(track)">Update</button>
+           <button mat-raised-button  (click)="onClick(track.id)">Delete</button>
+        </mat-card-actions>
+     </mat-card>
+    </div>

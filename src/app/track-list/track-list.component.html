@@ -1,0 +1,27 @@
+
+<h2>track list</h2>
+<!-- <ul *ngFor="let track of tracks">
+    <li>{{track.name}}</li>
+</ul> -->
+<div class="flexcontainer">
+<mat-card class = "tp-card" *ngFor="let track of tracks" >
+    <mat-card-header>
+       <div mat-card-avatar class = "tp-header-image"></div>
+       
+       <mat-card-title>{{track.name}}</mat-card-title>
+       <mat-card-subtitle>{{track.id}}</mat-card-subtitle>
+     
+    </mat-card-header>
+    <img mat-card-image src = "../../assets/track.jpg" alt = "Track">
+    <mat-card-content>
+       <p>
+         {{track.comment}}
+       </p>
+   
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="onClick(track)">Add to favourites</button>
+       <button mat-raised-button >Share</button>
+    </mat-card-actions>
+ </mat-card>
+</div>

@@ -1,0 +1,9 @@
+
+.right {
+    float: right;
+    /* position:fixed; */
+    top: 20px;
+    right: 10px;
+    margin-left: 60%;
+
+  }

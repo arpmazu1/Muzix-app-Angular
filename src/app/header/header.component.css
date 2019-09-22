@@ -1,0 +1,9 @@
+.mat-toolbar{
+ position: relative;
+ z-index: 1;
+min-width: 800px;
+    height:fit-content;
+    flex-wrap: wrap;
+    display:flex;
+
+}

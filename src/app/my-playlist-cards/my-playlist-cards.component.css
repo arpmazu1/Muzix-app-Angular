@@ -1,0 +1,18 @@
+.tp-card {
+    max-width: 400px;
+    /* z-index: 2; */
+    margin: 10px 10px 10px 10px;
+    top: 20px;
+ }
+ .tp-header-image {
+    /* background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg'); */
+    background-size: cover;
+ }
+
+ .flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  min-width: 800px;  
+ }

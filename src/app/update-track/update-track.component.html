@@ -1,0 +1,13 @@
+
+<h1 mat-dialog-title>{{data.id}}</h1>
+<h1 mat-dialog-title>{{data.name}}</h1>
+<div mat-dialog-content>
+  <p>Enter the comment: </p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.comment">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.comment" cdkFocusInitial>Ok</button>
+</div>
